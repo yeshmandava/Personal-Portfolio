@@ -64,16 +64,16 @@ export default function About() {
               <p className="font-medium ">
                 Hi, I&apos;m <strong>Yesh</strong>, a senior at the University
                 of Central Florida pursuing a major in Computer Science and a minor in Finance.
-                I&apos;m really intrigued by the blend of technology and finance, and I&apos;ve got two main passions: Fintech and Computer Vision AI.
+                I&apos;m interested by the blend of computer science and financial services, and I&apos;ve got two main passions: Fintech and Computer Vision AI.
               </p>
               <p className="my-4 font-medium">
-                I find it fascinating how the intersection between technology and finance have revolutionized B2B,
+                I find it fascinating how the intersection between technology and finance has revolutionized the way we go about B2B,
                 B2C, and consumer transactions through services like blockchain, digital payments, 
                 crowdfunding and investment algorithms. Then there's Computer Vision AI, which gives computers the ability to 
-                understand images and videos and recognize objects in real time. This can lead to some really cool applications. 
+                understand images and videos and recognize objects in real time. I hope to develop applications revolving around the realms of AI and Fintech . 
               </p>
               <p className="font-medium">
-                Away from the computer, my hobbies include swimming, biking, working out and binging TV shows. I love watching the NBA , Premier League Soccer and Formula 1.
+                Away from the computer, my hobbies include swimming, biking, working out and binging TV shows. I also enjoy watching the NBA , Premier League Soccer and Formula 1.
               </p>
             </div>
             <div className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark 

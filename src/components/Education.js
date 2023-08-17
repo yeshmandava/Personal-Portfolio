@@ -11,9 +11,9 @@ const Details = ({ type, time, place, info }) => {
     >
       <AboutIcon reference={ref} />
       <motion.div
-        initial={{ y: 50 }}
+        initial={{ y: 60 }}
         whileInView={{ y: 0 }}
-        transition={{ duration: 0.5, type: "spring" }}
+        transition={{ duration: 0.8, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{type}</h3>
         <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm">
@@ -30,14 +30,14 @@ const Education = () => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center start"],
+    offset: ["center end", "center start"],
   });
 
   return (
     <div className="my-64">
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">Education</h2>
 
-      <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
+      <div ref={ref} className="relative w-[95%] mx-auto lg:w-[90%] md:w-full">
         <motion.div
           className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] h-full bg-dark  origin-top rounded-full dark:bg-primaryDark dark:shadow-3xl"
           style={{ scaleY: scrollYProgress }}
