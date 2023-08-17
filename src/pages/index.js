@@ -48,12 +48,12 @@ export default function Home() {
         <Layout className="!pt-0 md:!pt-16 sm:!pt-16 ">
 
           {/* <div className="flex w-full justify-center"> */}
-          <div className="flex flex-col items-center md:items-start"> {/* Center on mobile, align start on medium and larger screens */}
+          <div className="flex flex-col items-center md:items-start sm:items-start"> {/* Center on mobile, align start on medium and larger screens */}
 
-            <div className="w-4/5 md:w-1/3 flex flex-col items-start self-center">
+            <div className="w-1/2 md:w-1/1 flex flex-col items-start self-center">
 
               {/* <div className="text-left text-3xl"> */}
-              <div className="text-left md:text-center text-3xl md:text-5xl">
+              <div className="text-left md:text-center sm:text-left text-3xl md:text-5xl">
                 <AnimatedText text="Hey, I'm __" className="font-normal text-5xl" />
               </div>
 
