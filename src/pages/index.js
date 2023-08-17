@@ -50,7 +50,7 @@ export default function Home() {
           {/* <div className="flex w-full justify-center"> */}
           <div className="flex flex-col items-center md:items-start sm:items-start"> {/* Center on mobile, align start on medium and larger screens */}
 
-            <div className="w-1/2 md:w-1/1 flex flex-col items-start self-center">
+            <div className="w-1/2 md:w-1/1 sm:w-1/1 flex flex-col items-start self-center">
 
               {/* <div className="text-left text-3xl"> */}
               <div className="text-left md:text-center sm:text-left text-3xl md:text-5xl">
