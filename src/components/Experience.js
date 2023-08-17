@@ -8,6 +8,7 @@ import LiIcon from "./LiIcon";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null);
+
   return (
     <li
       ref={ref}
@@ -81,6 +82,7 @@ const Experience = () => {
               content, including designing and implementing a new user interface
               and developing the backend infrastructure to support the feature."
             />
+
 
             <Details
               position="Software Developer Accelerate"

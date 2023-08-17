@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import proj1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import proj1 from "../../public/images/projects/JPMC Project SS.png";
 import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
 import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
 import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
@@ -16,9 +16,11 @@ import { ParticlesBackground } from "@/components/ParticlesBackground";
 
 const FramerImage = motion(Image);
 
+
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
   return (
+    
     
     <article
       className="relative flex w-full items-center  justify-between rounded-3xl rounded-br-2xl border
@@ -32,7 +34,6 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
          dark:bg-light  xs:-right-2 xs:h-[102%] xs:w-[100%]
         xs:rounded-[1.5rem] "
       />
-
       <Link
         href={link}
         target={"_blank"}
@@ -50,7 +51,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
           priority
         />
       </Link>
-      <ParticlesBackground />
+      
 
       <div className="flex w-1/2 flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
         <span className="text-xl font-medium text-primary dark:text-primaryDark xs:text-base">
@@ -108,6 +109,7 @@ const Project = ({ title, type, img, link, github }) => {
          dark:bg-light  md:-right-2 md:w-[101%] xs:h-[102%]
         xs:rounded-[1.5rem]  "
       />
+      <ParticlesBackground />
 
       <Link
         href={link}
@@ -166,6 +168,7 @@ const Project = ({ title, type, img, link, github }) => {
 
 export default function Projects() {
   return (
+    
     <>
       <Head>
         <title>Modern Portfolio Built with Nextjs | Projects Page</title>
@@ -175,6 +178,7 @@ export default function Projects() {
         expertise in React.js and full-stack development. Browse software engineering articles and tutorials for tips on creating your own portfolio."
         />
       </Head>
+      
 
       <TransitionEffect />
       <main
@@ -182,7 +186,7 @@ export default function Projects() {
       >
         <Layout className="pt-16">
           <AnimatedText
-            text="Imagination Trumps Knowledge!"
+            text="Personal Projects!"
             className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
@@ -196,24 +200,7 @@ export default function Projects() {
                 github="https://github.com/codebucks27/CryptoBucks-Final-Code"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Website Template"
-                title="NFT collection Website"
-                img={proj2}
-                link="https://devdreaming.com/videos/create-nft-collection-website-reactjs"
-                github="https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Website"
-                title="Fashion Studio Website"
-                img={proj3}
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
-              />
-            </div>
+          
             <div className="col-span-12">
               <FeaturedProject
                 type="Portfolio Website"
@@ -224,6 +211,16 @@ export default function Projects() {
                 github="https://github.com/codebucks27/react-portfolio-final"
               />
             </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Website Template"
+                title="Agency Website Template"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
+                img={proj5}
+                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
+                github="https://github.com/codebucks27/wibe-studio"
+              />
+            </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Website Template"
@@ -231,15 +228,6 @@ export default function Projects() {
                 title="Agency Website Template"
                 link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
                 github="https://github.com/codebucks27/wibe-studio"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Blog Website"
-                img={proj6}
-                title="DevDreaming"
-                link="https://devdreaming.com"
-                github="https://github.com/codebucks27"
               />
             </div>
           </div>

@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profile from "../../public/images/profile/developer-pic-2.jpg";
+import profile from "../../public/images/profile/Headshot.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Skills from "@/components/Skills";
@@ -10,6 +10,10 @@ import Education from "@/components/Education";
 import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
+import { motion, AnimatePresence } from "framer-motion";
+
+
+
 
 function AnimatedNumberFramerMotion({ value }) {
   const ref = useRef(null);
@@ -38,19 +42,14 @@ function AnimatedNumberFramerMotion({ value }) {
 export default function About() {
   return (
     <>
-      <Head>
-        <title>Minimal Portfolio Built with Nextjs | About Page</title>
-        <meta name="description" content="Learn more about CodeBucks, a Next.js developer with a passion for 
-        creating innovative solutions. Discover tips for building a developer portfolio and insights on 
-        full-stack development, front-end development, and back-end development." />
-      </Head>
       <ParticlesBackground />
 
       <TransitionEffect />
       <main
         className={`flex  w-full flex-col items-center justify-center dark:text-light`}
       >
-        <Layout className="pt-16">
+        <Layout className="pt-16 ">
+
           <AnimatedText
             text="Passion Fuels Purpose!"
             className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
@@ -63,11 +62,8 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className="font-medium ">
-                Hi, I&apos;m <strong>Yesh</strong>, a web developer and
-                UI/UX designer with a passion for creating beautiful,
-                functional, and user-centered digital experiences. With 4 years
-                of experience in the field. I am always looking for new and
-                innovative ways to bring my clients&apos; visions to life.
+                Hi, I&apos;m <strong>Yesh</strong>, a rising senior at the University
+                of Central Florida pursuing a major in Computer Science and a minor in Finance.
               </p>
               <p className="my-4 font-medium">
                 I believe that design is about more than just making things look
@@ -88,13 +84,12 @@ export default function About() {
             ">
               <div
                 className="absolute  top-0 -right-3 -z-10 h-[103%] w-[102%]  rounded-[2rem] rounded-br-3xl 
-                bg-dark
-        dark:bg-light  "
+                bg-dark dark:bg-light  "
               />
               <Image
                 className="h-auto w-full rounded-2xl"
                 src={profile}
-                alt="Codebucks"
+                alt="Yesh Mandava"
                 sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
@@ -105,41 +100,60 @@ export default function About() {
             xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={40} />+
+                  {/* <AnimatedNumberFramerMotion value={} /> */}
                 </span>
                 <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  satisfied clients
+                  {/* Bars */}
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={50} />+
+                  {/* <AnimatedNumberFramerMotion value={50} />+ */}
                 </span>
                 <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  projects completed
+                  {/* projects completed */}
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={4} />+
+                  {/* <AnimatedNumberFramerMotion value={4} />+ */}
                 </span>
                 <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  Years of experience
+                  {/* Years of experience */}
                 </h2>
               </div>
             </div>
           </div>
 
           <Skills />
-          <Experience />
+          <AnimatePresence>
+            {/* Content before "Experience" */}
+            {/* ... */}
+
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 50 },
+              }}
+              transition={{ duration: 0.8 }}
+            >
+              <Experience />
+            </motion.div>
+          </AnimatePresence>
+
+          {/* <Experience /> */}
           <Education />
         </Layout>
       </main>
     </>
   );
 }
+

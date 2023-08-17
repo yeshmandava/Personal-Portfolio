@@ -6,48 +6,71 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../../public/images/profile/AI-face.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
-import  {ParticlesBackground}  from "@/components/ParticlesBackground";
+import { ParticlesBackground } from "@/components/ParticlesBackground";
+import Typewriter from 'typewriter-effect';
 
 
 export default function Home() {
-  
+
   return (
     <>
       <Head>
-        <title>Awesome Portfolio Built with Nextjs</title>
+
+        <title>Yesh's Personal Portfolio</title>
         <meta
           name="description"
-          content="Explore CodeBucks's Next.js developer portfolio and 
-        discover the latest webapp projects and software engineering articles. 
-        Showcase your skills as a full-stack developer and software engineer."
+          content="Personal portfolio for Yesh Mandava."
         />
       </Head>
       <ParticlesBackground />
-
       <TransitionEffect />
+
       <article
         className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
       >
-        <Layout className="!pt-0 md:!pt-16 sm:!pt-16">
-          <div className="flex w-full items-start justify-between md:flex-col">
-            <div className="w-1/2 lg:hidden md:inline-block md:w-full">
-              <Image
-                src={profilePic}
-                alt="Yesh Mandava"
-                className="h-auto w-full"
-                sizes="100vw"
-                priority
-              />
-            </div>
-            <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
-              <AnimatedText
-                text="Turning vision into reality with code and design."
-                className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
-              />
+        {/* <div className="relative col-span-3 lg:w-1/2 h-auto rounded-2xl border-2 border-solid border-dark 
+            p-8 dark:border-light
+            xl:col-span-4 md:col-span-8 md:order-1 
+            " style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+          <Image
+            className="h-auto w-full rounded-2xl"
+            src={profilePic}
+            alt="Yesh Mandava"
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+            priority
+          />
+        </div> */}
+
+        <Layout className="!pt-0 md:!pt-16 sm:!pt-16 ">
+          <div className="flex w-full justify-center">
+            <div className="w-4/5 md:w-1/2 flex flex-col items-start self-center">
+              <div className="text-left text-3xl">
+                <AnimatedText text="Hey, I'm __" className="font-normal text-10xl" />
+              </div>
+
+              <div className="font-bold text-blue-500 text-6xl">
+                <Typewriter
+                  options={{
+                    strings: [
+                      '<span style="color: light-blue;">Yesh Mandava</span>',
+                      '<span style="color: green;">Yesh Mandava</span>',
+                      '<span style="color: yellow;">Yesh Mandava</span>',
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    cursor: "<",
+                    cursorStyle: "color: red; font-size: 1.5rem;",
+                  }}
+                />
+              </div>
+
+
               <p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
-              As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.
               </p>
               <div className="mt-2 flex items-center self-start lg:self-center">
                 <Link
