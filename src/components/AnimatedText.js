@@ -34,7 +34,7 @@ const AnimatedText = ({ text, className = "" }) => {
     overflow-hidden sm:py-0">
       <motion.h1
         className={`inline-block text-dark dark:text-light
-      text-3xl font-bold w-full capitalize  ${className} xl:text-3xl md:ml-4 lg:ml-8 xl:ml-12`}
+      text-3xl font-bold w-full capitalize  ${className} xl:text-3xl pr-0 sm:pr-0 xl:pr-0`}
         variants={quote}
         initial="hidden"
         animate="visible"
