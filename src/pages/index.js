@@ -53,7 +53,7 @@ export default function Home() {
             <div className="w-1/2 md:w-1/1 sm:w-1/1 flex flex-col items-start self-center">
 
               {/* <div className="text-left text-3xl"> */}
-              <div className="text-left  text-3xl md:text-5xl">
+              <div className="text-left">
                 <AnimatedText text="Hey, I'm __" className="font-normal" />
               </div>
 
