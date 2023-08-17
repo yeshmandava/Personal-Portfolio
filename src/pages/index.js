@@ -52,8 +52,8 @@ export default function Home() {
 
             <div className=" w-1/2 md:w-1/1 sm:w-1/1 xl:1/1 flex flex-col items-start self-center">
 
-              <div className="text-left xl:w-1/1"> 
-                <AnimatedText text="Hey, I'm __" className=" xl:w-1/1 text-left font-normal pr-0 sm:pr-0 md:pr-0" />
+              <div className="text-left w-1/1"> 
+                <AnimatedText text="Hey, I'm __" className=" text-left font-normal pr-0 sm:pr-0 md:pr-0" />
                </div>
 
               <div className="font-bold text-blue-500 text-4xl">
