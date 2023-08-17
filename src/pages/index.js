@@ -46,10 +46,15 @@ export default function Home() {
         </div> */}
 
         <Layout className="!pt-0 md:!pt-16 sm:!pt-16 ">
-          <div className="flex w-full justify-center">
+          
+          {/* <div className="flex w-full justify-center"> */}
+          <div className="flex flex-col items-center md:items-start"> {/* Center on mobile, align start on medium and larger screens */}
+
             <div className="w-4/5 md:w-1/2 flex flex-col items-start self-center">
-              <div className="text-left text-3xl">
-                <AnimatedText text="Hey, I'm __" className="font-normal text-10xl" />
+
+              {/* <div className="text-left text-3xl"> */}
+              <div className="text-left md:text-center text-3xl md:text-5xl">
+                <AnimatedText text="Hey, I'm __" className="font-normal text-5xl" />
               </div>
 
               <div className="font-bold text-blue-500 text-6xl">
@@ -70,14 +75,14 @@ export default function Home() {
 
 
               <p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
-                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my experience, skills and latest projects.
               </p>
               <div className="mt-2 flex items-center self-start lg:self-center">
                 <Link
                   // whileHover={{
                   //   cursor: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='font-size:24px;'><text y='50%'>👆</text></svg>"), auto`,
                   // }}
-                  href="/dummy.pdf"
+                  href="/Resume-YeshwanthMandava.pdf"
                   target={"_blank"}
                   className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 

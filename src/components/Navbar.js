@@ -123,14 +123,13 @@ const Navbar = () => {
         <motion.a
           target={"_blank"}
           className="w-8 ml-3"
-          href=""
+          href="https://twitter.com/yeshmandava"
           whileHover={{ y: -5 }}
           whileTap={{ scale: 1.0 }}
           aria-label="Checkout my twitter profile"
         >
           <TwitterIcon />
         </motion.a>
-
 
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -161,7 +160,7 @@ const Navbar = () => {
         <CustomMobileLink toggle={handleClick} className="mr-4 lg:m-0 lg:my-2" href="/" title="Home" />
         <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/about" title="About" />
         <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/projects" title="Projects" />
-        <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/articles" title="Articles" />
+        {/* <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/articles" title="Articles" /> */}
       </nav>
       <nav
         className="flex items-center justify-center  mt-2
@@ -169,53 +168,33 @@ const Navbar = () => {
       >
         <motion.a
           target={"_blank"}
-          className="w-6 m-1 mr-3 sm:mx-1"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Checkout my twitter profile"
-        >
-          <TwitterIcon />
-        </motion.a>
-        <motion.a
-          target={"_blank"}
-          className="w-6 m-1 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
+          className="w-8 mx-3"
+          href="https://github.com/yeshmandava"
+          whileHover={{ y: -5 }}
+          whileTap={{ scale: 1.0 }}
           aria-label="Checkout my github profile"
         >
           <GithubIcon />
         </motion.a>
         <motion.a
           target={"_blank"}
-          className="w-6 m-1 mx-3 sm:mx-1"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
+          className="w-8 mx-3"
+          href="https://www.linkedin.com/in/yesh-mandava/"
+          whileHover={{ y: -5 }}
+          whileTap={{ scale: 1.0 }}
           aria-label="Checkout my linkedin profile"
         >
           <LinkedInIcon />
         </motion.a>
         <motion.a
           target={"_blank"}
-          className="w-6 m-1 mx-3 bg-light rounded-full sm:mx-1"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Checkout my pinterest profile"
+          className="w-8 ml-3"
+          href="https://twitter.com/yeshmandava"
+          whileHover={{ y: -5 }}
+          whileTap={{ scale: 1.0 }}
+          aria-label="Checkout my twitter profile"
         >
-          <PinterestIcon />
-        </motion.a>
-        <motion.a
-          target={"_blank"}
-          className="w-6 m-1 mx-3 sm:mx-1"
-          href="#"
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          aria-label="Checkout my dribbble profile"
-        >
-          <DribbbleIcon />
+          <TwitterIcon />
         </motion.a>
 
         <button
