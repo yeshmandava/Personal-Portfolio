@@ -47,14 +47,17 @@ const Education = () => {
             type="B.S Computer Science"
             time="2020-2024"
             place="University of Central Florida (UCF)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+            info="Relevant courses included Data Structures and Algorithms, Object Oriented Programming, 
+                  Database systems, Computer Arichitecture, and Discrete Structures."
           />
 
           <Details
             type="Minor in Finance"
             time="2022-2024"
             place="University of Central Florida (UCF)"
-            info="Completed a master's project on deep learning, developing a new neural network architecture for natural language understanding."
+            info="Gained a grasp of fundamental concepts ranging from the time value of money and risk assessment to financial analysis and the dynamics of financial markets.
+                  Introduced to the role of financial intermediaries, securities, and comprehending the impact of economic factors on global markets.
+                  such as corporate financial strategies, assessing a company's financial statements and fiscal health"
           />
         </ul>
       </div>

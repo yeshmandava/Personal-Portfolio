@@ -53,11 +53,11 @@ export default function Home() {
             <div className="w-1/2 md:w-1/1 sm:w-1/1 flex flex-col items-start self-center">
 
               {/* <div className="text-left text-3xl"> */}
-              <div className="text-left md:text-center sm:text-left text-3xl md:text-5xl">
-                <AnimatedText text="Hey, I'm __" className="font-normal text-5xl" />
+              <div className="text-left  text-3xl md:text-5xl">
+                <AnimatedText text="Hey, I'm __" className="font-normal" />
               </div>
 
-              <div className="font-bold text-blue-500 text-6xl">
+              <div className="font-bold text-blue-500 text-4xl">
                 <Typewriter
                   options={{
                     strings: [

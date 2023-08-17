@@ -51,7 +51,7 @@ export default function About() {
         <Layout className="pt-16 ">
 
           <AnimatedText
-            text="Passion Fuels Purpose!"
+            text="About Me!"
             className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
 
@@ -62,20 +62,18 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className="font-medium ">
-                Hi, I&apos;m <strong>Yesh</strong>, a rising senior at the University
+                Hi, I&apos;m <strong>Yesh</strong>, a senior at the University
                 of Central Florida pursuing a major in Computer Science and a minor in Finance.
+                I&apos;m really intrigued by the blend of technology and finance, and I&apos;ve got two main passions: Fintech and Computer Vision AI.
               </p>
               <p className="my-4 font-medium">
-                I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating
-                intuitive, enjoyable experiences for users.
+                I find it fascinating how the intersection between technology and finance have revolutionized B2B,
+                B2C, and consumer transactions through services like blockchain, digital payments, 
+                crowdfunding and investment algorithms. Then there's Computer Vision AI, which gives computers the ability to 
+                understand images and videos and recognize objects in real time. This can lead to some really cool applications. 
               </p>
               <p className="font-medium">
-                Whether I&apos;m working on a website, mobile app, or other
-                digital product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                Away from the computer, my hobbies include swimming, biking, working out and binging TV shows. I love watching the NBA , Premier League Soccer and Formula 1.
               </p>
             </div>
             <div className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark 
@@ -87,7 +85,7 @@ export default function About() {
                 bg-dark dark:bg-light  "
               />
               <Image
-                className="h-auto w-full rounded-2xl"
+                className="h-auto w-full rounded-2xl m1-4"
                 src={profile}
                 alt="Yesh Mandava"
                 sizes="(max-width: 768px) 100vw,
@@ -96,45 +94,11 @@ export default function About() {
                 priority
               />
             </div>
-            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row 
-            xl:items-center md:order-3">
-              <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  {/* <AnimatedNumberFramerMotion value={} /> */}
-                </span>
-                <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  {/* Bars */}
-                </h2>
-              </div>
-
-              <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  {/* <AnimatedNumberFramerMotion value={50} />+ */}
-                </span>
-                <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  {/* projects completed */}
-                </h2>
-              </div>
-
-              <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  {/* <AnimatedNumberFramerMotion value={4} />+ */}
-                </span>
-                <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  {/* Years of experience */}
-                </h2>
-              </div>
-            </div>
+           
           </div>
 
           <Skills />
           <AnimatePresence>
-            {/* Content before "Experience" */}
-            {/* ... */}
-
             <motion.div
               initial="hidden"
               animate="visible"
