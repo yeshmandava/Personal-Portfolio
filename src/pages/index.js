@@ -53,7 +53,7 @@ export default function Home() {
             <div className="w-1/2 md:w-1/1 sm:w-1/1 flex flex-col items-start self-center pr-8 sm:pr-10 md:pr-12">
 
               {/* <div className="text-left text-3xl"> */}
-                <AnimatedText text="Hey, I'm __" className=" text-left font-normal " />
+                <AnimatedText text="Hey, I'm __" className=" text-left font-normal pr-8 sm:pr-10 md:pr-12 " />
               {/* </div> */}
 
               <div className="font-bold text-blue-500 text-4xl">
