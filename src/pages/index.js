@@ -46,11 +46,11 @@ export default function Home() {
         </div> */}
 
         <Layout className="!pt-0 md:!pt-16 sm:!pt-16 ">
-          
+
           {/* <div className="flex w-full justify-center"> */}
           <div className="flex flex-col items-center md:items-start"> {/* Center on mobile, align start on medium and larger screens */}
 
-            <div className="w-4/5 md:w-1/2 flex flex-col items-start self-center">
+            <div className="w-4/5 md:w-1/3 flex flex-col items-start self-center">
 
               {/* <div className="text-left text-3xl"> */}
               <div className="text-left md:text-center text-3xl md:text-5xl">
