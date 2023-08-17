@@ -6,11 +6,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import proj1 from "../../public/images/projects/JPMC Project SS.png";
-import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
-import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
-import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
-import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
-import proj6 from "../../public/images/projects/devdreaming.jpg";
+import proj2 from "../../public/images/projects/BodyLangProject.png";
+import proj3 from "../../public/images/projects/PersonalWebsite.png";
+import proj4 from "../../public/images/projects/FoodApp.png";
 import TransitionEffect from "@/components/TransitionEffect";
 import { ParticlesBackground } from "@/components/ParticlesBackground";
 
@@ -192,42 +190,65 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                type="Finance Project"
+                title="Equities Strategy Dashboard"
+                summary={"Enhancing a trader's dashboard within "+
+                "the Equities team, enabling them to input data for monitoring a new trading strategy. "+
+                "The project entails interfacing with financial data feeds, performing necessary calculations," +
+                "and utilizing JPMorgan's Perspective software to visualize and analyze real-time data, aligning with user requirements."}
                 img={proj1}
-                link="https://devdreaming.com/videos/build-crypto-screener-app-with-react-tailwind-css"
-                github="https://github.com/codebucks27/CryptoBucks-Final-Code"
+                link="https://github.com/yeshmandava/JPMC-SWE-Project.git"
+                github="https://github.com/yeshmandava/JPMC-SWE-Project.git"
               />
             </div>
           
             <div className="col-span-12">
               <FeaturedProject
-                type="Portfolio Website"
-                title="React Portfolio Website"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
-                img={proj4}
-                link="https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion"
-                github="https://github.com/codebucks27/react-portfolio-final"
+                type="AI Project"
+                title="Real-Time Body Language Recognition "
+                summary={"This project utilizes Mediapipe and OpenCV to create a real-time body language "+
+                "recognition system, using a trained machine learning model to classify gestures from webcam "+
+                "data and display results on the live feed. It identifies and traces facial, hand, and body pose "+
+                "landmarks in webcam streams, subsequently utilizing trained machine learning models to classify and "+
+                "exhibit recognized body language gestures in real-time, offering immediate insights into individuals'" +
+                "nonverbal communication signals."}
+                img={proj2}
+                link="https://github.com/yeshmandava/Body-Language-Detector/tree/main"
+                github="https://github.com/yeshmandava/Body-Language-Detector/tree/main"
               />
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                type="Website Template"
-                title="Agency Website Template"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
-                img={proj5}
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
+                type="Personal Website"
+                title="Personal Portfolio Website"
+                summary={"Built a portfolio website by leveraging Next.js for dynamic page rendering, Tailwind CSS for "+
+                "efficient styling, and Framer Motion for fluid animations. The integration of responsive layouts, optimized "+
+                "image handling, and seamless transitions"}
+                img={proj3}
+                link="https://github.com/yeshmandava/Personal-Portfolio"
+                github="https://github.com/yeshmandava/Personal-Portfolio"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Food App"
+                title="Cookbook Recipe App"
+                summary={"Developed an application that enables users to curate and share their personalized "+
+                "recipes while exploring a diverse array of culinary creations from others. Serving as a food based social"+ 
+                "platform, the application was built using MongoDB, Express.js, React, and Node.js to facilitate seamless recipe storage, "+
+                "sharing, and discovery."}
+                img={proj4}
+                link="https://github.com/yeshmandava/PlateFull-Food-App"
+                github="https://github.com/yeshmandava/PlateFull-Food-App"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Website Template"
-                img={proj5}
-                title="Agency Website Template"
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
+                type=""
+                // img={}
+                title=""
+                link=""
+                github=""
               />
             </div>
           </div>
